@@ -3,14 +3,14 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_FIREBASE_APP_ID,
-  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
-};
+    apiKey: "AIzaSyBmgMgMTZwZWbWe-UU3hMyEUf7fPd7aA9w",
+    authDomain: "scrapester-saas.firebaseapp.com",
+    projectId: "scrapester-saas",
+    storageBucket: "scrapester-saas.firebasestorage.app",
+    messagingSenderId: "928617955779",
+    appId: "1:928617955779:web:fd1ddd048057c9c0563d76",
+    measurementId: "G-S874L34MZE"
+  };
 
 // Inicializar Firebase
 const app = initializeApp(firebaseConfig);
