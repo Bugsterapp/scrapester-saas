@@ -3,13 +3,7 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBmgMgMTZwZWbWe-UU3hMyEUf7fPd7aA9w",
-    authDomain: "scrapester-saas.firebaseapp.com",
-    projectId: "scrapester-saas",
-    storageBucket: "scrapester-saas.firebasestorage.app",
-    messagingSenderId: "928617955779",
-    appId: "1:928617955779:web:fd1ddd048057c9c0563d76",
-    measurementId: "G-S874L34MZE"
+
   };
 
 // Inicializar Firebase
