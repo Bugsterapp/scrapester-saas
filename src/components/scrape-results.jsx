@@ -98,7 +98,7 @@ export function ScrapeResults({ data, onRetry }) {
             <TabsContent value="markdown">
               <div className="relative">
                 <div className="bg-secondary p-4 rounded-md overflow-x-auto">
-                  <div className="prose prose-sm dark:prose-invert max-w-none">
+                  <div className="prose prose-sm dark:prose-invert max-w-none max-h-96">
                     <ReactMarkdown>{data.data.markdown}</ReactMarkdown>
                   </div>
                 </div>
@@ -118,6 +118,7 @@ export function ScrapeResults({ data, onRetry }) {
                   <code className="text-sm">
                     {JSON.stringify({
                       url: data.data.url,
+                      markdown: data.data.markdown,
                       metadata: data.data.metadata,
                       timestamp: data.data.timestamp
                     }, null, 2)}

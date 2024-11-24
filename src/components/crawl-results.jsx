@@ -81,7 +81,7 @@ export function CrawlResults({ data, onRetry }) {
                 <TabsContent value="markdown">
                   <div className="relative">
                     <div className="bg-secondary p-4 rounded-md overflow-x-auto">
-                      <div className="prose prose-sm dark:prose-invert max-w-none">
+                      <div className="prose prose-sm dark:prose-invert max-w-none max-h-96">
                         <ReactMarkdown>{page.markdown}</ReactMarkdown>
                       </div>
                     </div>
@@ -101,6 +101,7 @@ export function CrawlResults({ data, onRetry }) {
                       <code className="text-sm">
                         {JSON.stringify({
                           url: page.url,
+                          markdown: page.markdown,
                           metadata: page.metadata,
                           timestamp: page.timestamp
                         }, null, 2)}
